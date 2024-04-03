@@ -104,8 +104,8 @@ section:has(ul) > .subtitle {
 }
 
 /* add selector */
- {
-  padding-left: /* add value */ ;
+.favourites > ul > li {
+  padding-left: 10px ;
 }
 
 /* ------- The End -------- */
