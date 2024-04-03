@@ -55,6 +55,9 @@ main {
 }
 
 .box--center {
+  position: absolute;
+  left: 42.5%;
+  top:42.5%;
   background-color: #3498db;
 }
 
