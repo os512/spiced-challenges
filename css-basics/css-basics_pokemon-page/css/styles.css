@@ -68,6 +68,9 @@ section {
   border-left: solid 5px orange;
 }
 
+section :has(li) {
+  border-left: solid 5px gold;
+}
 /* ------- Headings Part 2 ------- */
 
 /* Task 6: The headings of our sections somehow look boring. Therefore, we want to change this:
