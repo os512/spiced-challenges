@@ -12,7 +12,7 @@ body {
 div {
   font-family: cursive;
   padding: 8px;
-  
+
   /* set the height and the width of the box to 150px */
   height: 150px;
   width: 150px;
@@ -21,6 +21,7 @@ div {
   background-color: hotpink;
 
   /* make the text color "white" */
+  color: #fff;
 
   /* can you give the box round edges with an radius of 8px? */
 
