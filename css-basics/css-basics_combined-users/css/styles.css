@@ -83,6 +83,10 @@ li {
   To do so, add a "debug" class to the html element.
 */
 
+aside > .user {
+  max-width: 250px;
+}
+
 /*
   Part 2
 
