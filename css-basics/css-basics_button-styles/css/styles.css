@@ -43,6 +43,9 @@ button {
 
 .button3 {
   /*Style me! You can test out changing the font, or font size, ...*/
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .button4 {
