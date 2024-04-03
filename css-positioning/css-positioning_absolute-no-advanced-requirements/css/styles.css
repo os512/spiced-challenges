@@ -69,6 +69,9 @@ main {
 }
 
 .box--bottom-center {
+  position: absolute;
+  left: 42.5%;
+  bottom: 0;
   background-color: #21618c;
 }
 
