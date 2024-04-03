@@ -69,9 +69,8 @@ section {
 }
 
 /* TODO OS: continue */
-section :has() {
-  border-left: solid 5px greenyellow;
-  /* border-left: solid 5px gold; */
+section:has(ul) {
+  border-left: solid 5px gold;
 }
 /* ------- Headings Part 2 ------- */
 
