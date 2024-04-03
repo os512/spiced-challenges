@@ -85,6 +85,7 @@ section:has(ul) {
 .subtitle {
   /* your solution */
   border-inline: solid 3px gold;
+  padding-inline: 10px;
 }
 
 /* ------- List ------- */
