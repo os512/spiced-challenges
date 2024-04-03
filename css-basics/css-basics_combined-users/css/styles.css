@@ -97,6 +97,9 @@ aside > .user {
   margin: 6px 0;
 }
 
+.user > .location {
+  font-size: 10px;
+}
 /*
   Part 2
 
