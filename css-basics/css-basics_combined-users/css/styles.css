@@ -85,6 +85,7 @@ li {
 
 aside > .user {
   max-width: 250px;
+  padding: 12px;
 }
 
 /*
