@@ -65,6 +65,7 @@ section {
   background-color: #fff;
   margin: 10px;
   padding: 20px;
+  border-left: solid 5px orange;
 }
 
 /* ------- Headings Part 2 ------- */
