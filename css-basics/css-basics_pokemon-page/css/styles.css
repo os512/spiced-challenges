@@ -89,6 +89,10 @@ section:has(ul) {
   padding-inline: 10px;
 }
 
+section:has(ul) > .subtitle {
+  border-inline: solid 3px orange;
+}
+
 /* ------- List ------- */
 
 /* Task 7: Last but not least! We want to style our list with our favorite Pokémon. Which selector do we need? And also add values for the padding. */
