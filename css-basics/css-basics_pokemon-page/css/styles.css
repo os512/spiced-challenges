@@ -98,9 +98,9 @@ section:has(ul) > .subtitle {
 /* Task 7: Last but not least! We want to style our list with our favorite Pokémon. Which selector do we need? And also add values for the padding. */
 
 /* add selector */
- {
+ .favourites > ul > li:nth-child(2) {
   list-style: "🧡";
-  padding-left: /* add value */ ;
+  padding-left: 10px ;
 }
 
 /* add selector */
