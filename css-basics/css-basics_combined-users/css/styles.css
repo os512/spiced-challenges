@@ -89,6 +89,10 @@ aside > .user {
   border-radius: 4px;
 }
 
+.user > .name {
+  font-size: 16px;
+}
+
 /*
   Part 2
 
