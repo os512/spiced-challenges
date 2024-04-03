@@ -36,20 +36,21 @@ main {
 */
 
 .box--top-left {
-  background-color: #aed6f1;
-  position: relative;
-  top: 0p;
+  position: absolute;
+  top: 0;
   left: 0;
+  background-color: #aed6f1;
 }
 
 .box--top-center {
+  position: absolute;
+  left: 42.5%;
   background-color: #85c1e9;
-  position: relative;
-  top: -80px;
-  left: 45%;
 }
 
 .box--top-right {
+  position: absolute;
+  right: 0;
   background-color: #5dade2;
 }
 
