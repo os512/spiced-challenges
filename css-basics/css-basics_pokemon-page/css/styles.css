@@ -68,8 +68,10 @@ section {
   border-left: solid 5px orange;
 }
 
-section :has(li) {
-  border-left: solid 5px gold;
+/* TODO OS: continue */
+section :has() {
+  border-left: solid 5px greenyellow;
+  /* border-left: solid 5px gold; */
 }
 /* ------- Headings Part 2 ------- */
 
