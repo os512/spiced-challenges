@@ -43,8 +43,8 @@ h6 {
 - Center the text of the heading
 */
 
-.title {
-  /* your solution */
+h1 {
+  background-color: #fff;
 }
 
 /* ------- Sections ------- */
