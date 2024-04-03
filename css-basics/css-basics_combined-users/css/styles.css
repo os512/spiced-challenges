@@ -111,3 +111,6 @@ aside > .user {
 
   💡 You can use the display property to hide elements.
 */
+ul > li > .user > .bio {
+  display: none;
+}
