@@ -32,6 +32,7 @@ button {
 .button1 {
   /*Style me! Change my border, set a border radius or what you want to try out. :) */
   border: dashed 2px orchid;
+  border-radius: 50%;
 }
 
 .button2 {
