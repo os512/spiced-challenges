@@ -101,7 +101,7 @@ footer a {
 }
 
 /* 9. These styles should apply to the welcome text */
-FIX_ME {
+#welcome-text {
   outline: 2px dashed red;
   font-size: 1.2rem;
   color: #000000;
