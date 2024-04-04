@@ -63,7 +63,7 @@ li a, footer a {
 }
 
 /* 3. These styles should apply to all external links (you can use the attribute selector) */
- a {
+ a[href="#"] {
   outline: 2px dashed red;
   color: #ff8000;
 }
