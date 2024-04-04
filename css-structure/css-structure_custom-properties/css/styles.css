@@ -8,10 +8,12 @@
   --color-white: #fff;
   --color-black-light: #303030;
   --color-primary: #8236ffff;
+
+  --margin-reset: 0;
 }
 
 body {
-  margin: 0;
+  margin: var(--margin-reset);
   font-family: system-ui;
   line-height: 1.2;
 }
@@ -24,7 +26,7 @@ h1 {
   text-align: center;
   color: white;
   line-height: 1.4;
-  margin: 0;
+  margin: var(--margin-reset);
   letter-spacing: 0.025em;
   text-transform: uppercase;
   padding-block: 16px;
@@ -44,7 +46,7 @@ section {
   gap: 32px;
   padding: 16px;
   width: min(1000px, 100%);
-  margin: 0 auto;
+  margin: var(--margin-reset) auto;
 }
 
 article {
@@ -61,7 +63,7 @@ figure {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin: 0;
+  margin: var(--margin-reset);
   padding: 10px;
   background-color: var(--color-primary);
   border-radius: 4px;
