@@ -24,7 +24,7 @@ header {
 
 h1 {
   text-align: center;
-  color: white;
+  color: var(--color-white);
   line-height: 1.4;
   margin: var(--margin-reset);
   letter-spacing: 0.025em;
@@ -70,7 +70,7 @@ figure {
 }
 
 figcaption {
-  color: rgb(255 255 255);
+  color: var(--color-white);
 }
 
 nav {
