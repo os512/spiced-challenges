@@ -57,13 +57,13 @@ h1 {
 }
 
 /* 2. These styles should apply to all links */
-li a, footer a {
+a {
   outline: 2px dashed red;
   color: #ff00e6;
 }
 
 /* 3. These styles should apply to all external links (you can use the attribute selector) */
- a[href*="http"] {
+a[href*="http"] {
   outline: 2px dashed red;
   color: #ff8000;
 }
@@ -88,7 +88,8 @@ footer a {
 }
 
 /* 7. These styles should apply to all paragraphs and all lists (please use a class selector) */
-.text, .list {
+.text,
+.list {
   outline: 2px dashed red;
   color: #2c3f3f;
 }
@@ -127,7 +128,7 @@ li {
 }
 
 /* 13. These styles should apply to all nested lists */
- ul ul {
+ul ul {
   outline: 2px dashed red;
   margin: 0.5rem 0 0 0;
   background-color: #f1f1f1;
