@@ -114,7 +114,7 @@ footer .text {
 }
 
 /* 11. These styles should apply to all lists in the main content */
-FIX_ME {
+main ul {
   outline: 2px dashed red;
   padding: 1rem 2rem;
   background: #caced2;
