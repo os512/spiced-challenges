@@ -10,6 +10,7 @@
   --color-primary: #8236ffff;
 
   --margin-reset: 0;
+  --font-spacing-base: 0.025em;
 }
 
 body {
@@ -27,13 +28,13 @@ h1 {
   color: var(--color-white);
   line-height: 1.4;
   margin: var(--margin-reset);
-  letter-spacing: 0.025em;
+  letter-spacing: var(--font-spacing-base);
   text-transform: uppercase;
   padding-block: 16px;
 }
 
 h2 {
-  letter-spacing: 0.025em;
+  letter-spacing: var(--font-spacing-base);
 }
 
 strong {
@@ -98,7 +99,7 @@ mark {
   background-color: var(--color-primary);
   color: var(--color-white);
   border-radius: 4px;
-  letter-spacing: 0.025em;
+  letter-spacing: var(--font-spacing-base);
 }
 
 ::selection {
