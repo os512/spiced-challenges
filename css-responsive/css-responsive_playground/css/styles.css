@@ -60,10 +60,12 @@ h1 {
 }
 
 .box--one {
+  --size: 6.25em;
+
   background-color: lightblue;
 
-  width: 100px;
-  height: 100px;
+  width: var(--size);
+  height: var(--size);
 }
 
 .box--two {
