@@ -88,6 +88,7 @@ h1 {
 
 .box--three {
   background-color: lightpink;
+  rotate: 90deg;
 
   width: 50px;
   height: 250px;
