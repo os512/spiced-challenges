@@ -42,6 +42,8 @@ body {
 }
 
 .tech-stack__list {
+  display: flex;
+  flex-direction: row;
   list-style: none;
   padding-left: 0;
 }
