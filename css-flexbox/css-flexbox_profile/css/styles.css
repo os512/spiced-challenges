@@ -30,6 +30,11 @@ body {
   color: var(--white);
 }
 
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
 .profile__image {
   border-radius: 50%;
   max-width: 50%;
@@ -37,6 +42,10 @@ body {
 }
 
 .tech-stack__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
   list-style: none;
   padding-left: 0;
 }
@@ -46,4 +55,8 @@ body {
   background-color: var(--primary-dark);
   color: var(--white);
   border-radius: 10px;
+}
+
+img {
+  align-self: center;
 }
