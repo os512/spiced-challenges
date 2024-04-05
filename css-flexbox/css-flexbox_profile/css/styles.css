@@ -44,6 +44,7 @@ body {
 .tech-stack__list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 10px;
   list-style: none;
   padding-left: 0;
