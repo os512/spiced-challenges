@@ -101,6 +101,12 @@ h1 {
   height: 100px;
 }
 
+@media (prefers-color-scheme: dark) {
+	.box--four {
+		background-color: black;
+	}
+}
+
 .box--five {
   width: 100%;
 }
