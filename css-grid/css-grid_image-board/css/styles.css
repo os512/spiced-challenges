@@ -23,6 +23,7 @@ body {
   /* Add styles here */
   grid-template-areas:
     "img01 img02 img03"
+    "img04 img02 img06"
     "img04 img05 img06";
 }
 
