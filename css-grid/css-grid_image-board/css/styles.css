@@ -36,24 +36,30 @@ body {
 
 .image-board__image--1 {
   /* Add styles here */
+  grid-area: img01;
 }
 
 .image-board__image--2 {
   /* Add styles here */
+  grid-area: img02;
 }
 
 .image-board__image--3 {
   /* Add styles here */
+  grid-area: img03;
 }
 
 .image-board__image--4 {
   /* Add styles here */
+  grid-area: img04;
 }
 
 .image-board__image--5 {
   /* Add styles here */
+  grid-area: img05;
 }
 
 .image-board__image--6 {
   /* Add styles here */
+  grid-area: img06;
 }
