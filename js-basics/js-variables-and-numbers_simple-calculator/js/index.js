@@ -15,6 +15,8 @@ const moduloButton = document.querySelector('[data-js="modulo"]');
 
 addButton.addEventListener("click", () => {
   // 1. Add the two operands and store the result in a variable. Log the variable's value to the console.
+  const sum = operand1 + operand2;
+  console.log("sum: ", sum);
 });
 
 subtractButton.addEventListener("click", () => {
