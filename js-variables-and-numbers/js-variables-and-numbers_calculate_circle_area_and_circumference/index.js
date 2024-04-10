@@ -14,5 +14,6 @@ For a circle with a radius of 5 units:
 - The circumference is approximately 31.42 units.
 
     Run your JavaScript program to see the calculated area and circumference of the circle with the specified radius.
-
  */
+
+const circleRadius = 5;
