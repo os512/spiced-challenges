@@ -27,6 +27,10 @@ console.clear();
 
 // 6. Store the text 'This is an error!' in the variable 'error'.
 
+const error = "This is an error!";
+
 // 7. Which method is used to display an error message in the console? Use it do display the error message in the console.
+
+console.error(error);
 
 // Well done!
