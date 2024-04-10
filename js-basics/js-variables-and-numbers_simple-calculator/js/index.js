@@ -27,6 +27,8 @@ subtractButton.addEventListener("click", () => {
 
 multiplyButton.addEventListener("click", () => {
   // 3. Multiply the two operands and store the result in a variable. Log the variable's value to the console.
+  const product = operand1 * operand2;
+  console.log("product: ", product);
 });
 
 divideButton.addEventListener("click", () => {
