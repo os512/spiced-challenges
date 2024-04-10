@@ -23,3 +23,4 @@ const startingBalance = 1000;
 const monthlyContribution = 150;
 const months = 4;
 
+const totalSavings = startingBalance + (monthlyContribution * months); //?
