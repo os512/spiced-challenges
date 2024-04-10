@@ -17,3 +17,6 @@ For a circle with a radius of 5 units:
  */
 
 const circleRadius = 5;
+
+const circleArea = Math.PI * Math.pow(circleRadius, 2);
+
