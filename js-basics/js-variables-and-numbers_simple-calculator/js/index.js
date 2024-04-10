@@ -97,6 +97,8 @@ decreaseByFiveButton.addEventListener("click", () => {
 
 multiplyByTwoButton.addEventListener("click", () => {
   // 11. Multiply the value of "operand1" by 2. Log the new value to the console.
+  operand1 *= 2;
+  console.log("operand1: ", operand1);
 });
 
 divideByTwoButton.addEventListener("click", () => {
