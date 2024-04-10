@@ -14,3 +14,4 @@ Steps
 const mealCost = 4;
 const tipPercentage = 0.1;
 
+let tipAmount = mealCost * tipPercentage;
