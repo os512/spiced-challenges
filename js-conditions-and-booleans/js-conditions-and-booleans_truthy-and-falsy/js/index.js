@@ -29,3 +29,19 @@ document.querySelectorAll('input[type="radio"]').forEach((element) => {
     }
   });
 });
+
+
+// Solution
+// 
+Boolean(2 == '2');
+Boolean(2 === "2");
+Boolean(2 === 2);
+Boolean("hello world");
+Boolean("");
+Boolean(true);
+Boolean(0);
+Boolean(-50);
+Boolean(50);
+Boolean(5 > 1);
+Boolean("1 > 10");
+Boolean("false");
