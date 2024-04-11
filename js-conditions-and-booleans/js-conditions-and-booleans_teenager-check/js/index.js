@@ -11,10 +11,12 @@ button.addEventListener("click", () => {
   // Use conditions and the logical AND operator to write
   // "You are a teen." or "You are not a teen." into the output.
 
-  
-  if (age == 18 || age >= 18) {
-    return output.innerHTML = "You are not a teen.";
+  if (!age || isNaN(age)) {
+    console.log("fsdhkdlshklds");
+    return (output.innerHTML = "Please provide a number!");
+  } else if (age >= 20) {
+    return (output.innerHTML = "You are not a teen.");
   } else {
-    return output.innerHTML = "You are a teen.";
+    return (output.innerHTML = "You are a teen.");
   }
 });
