@@ -14,9 +14,9 @@ button.addEventListener("click", () => {
   if (!age || isNaN(age)) {
     console.log("fsdhkdlshklds");
     return (output.innerHTML = "Please provide a number!");
-  } else if (age >= 20) {
-    return (output.innerHTML = "You are not a teen.");
-  } else {
+  } else if (age >= 13 && age < 20) {
     return (output.innerHTML = "You are a teen.");
+  } else {
+    return (output.innerHTML = "You are not a teen.");
   }
 });
