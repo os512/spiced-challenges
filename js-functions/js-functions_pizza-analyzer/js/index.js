@@ -6,7 +6,14 @@ const pizzaInput2 = document.querySelector('[data-js="pizza-input-2"]');
 const pizza2 = document.querySelector('[data-js="pizza-2"]');
 const outputSection = document.querySelector('[data-js="output-section"]');
 
+const pizzaElement1 = document.querySelector('[data-js="pizza-1"]');
+const pizzaElement2 = document.querySelector('[data-js="pizza-2"]');
+
 const output = document.querySelector('[data-js="output"]');
+
+// Get correct sizes of the pizza elements when page is loaded and reflect them visually
+updatePizzaDisplay(pizzaElement1, pizzaInput1.value);
+updatePizzaDisplay(pizzaElement2, pizzaInput2.value);
 
 pizzaInput1.addEventListener("input", () => {
   // write your code here
@@ -14,6 +21,7 @@ pizzaInput1.addEventListener("input", () => {
   const pizzaSize2 = pizzaInput2.value;
 
   calculatePizzaGain(pizzaSize1, pizzaSize2);
+  updatePizzaDisplay(pizzaElement1, pizzaSize1);
 });
 
 pizzaInput2.addEventListener("input", () => {
@@ -22,6 +30,7 @@ pizzaInput2.addEventListener("input", () => {
   const pizzaSize2 = pizzaInput2.value;
 
   calculatePizzaGain(pizzaSize1, pizzaSize2);
+  updatePizzaDisplay(pizzaElement2, pizzaSize2);
 });
 
 // Task 1
@@ -35,6 +44,11 @@ function calculatePizzaGain(diameter1, diameter2) {
 
 // Task 2
 // define the function updatePizzaDisplay here
+function updatePizzaDisplay(pizzaElement, newSize) {
+  pizzaElement.style.width = (newSize / 24) * 100 + "px";
+}
+
+// updatePizzaDisplay(pizzaElement1, 50);
 
 // Task 3
 // define the function updateOutputColor here
