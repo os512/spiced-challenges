@@ -26,13 +26,7 @@ function calculatePizzaGain(diameter1, diameter2) {
   const area1 = Math.PI * (diameter1 / 2) * (diameter1 / 2);
   const area2 = Math.PI * (diameter2 / 2) * (diameter2 / 2);
 
-  // const pizzaGainPercentRelativeToFirstPizza = (area2 - area1) / area1 * 100;
-
   output.textContent = Math.round(((area2 - area1) / area1) * 100);
-
-  // console.log(area1, area2);
-  // console.log(pizzaGainPercentRelativeToFirstPizza);
-  // return area1, area2;
 }
 
 // calculatePizzaGain(5, 6);
