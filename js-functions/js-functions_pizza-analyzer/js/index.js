@@ -10,16 +10,16 @@ const output = document.querySelector('[data-js="output"]');
 
 pizzaInput1.addEventListener("input", () => {
   // write your code here
-  let pizzaSize1 = pizzaInput1.value;
-  let pizzaSize2 = pizzaInput2.value;
+  const pizzaSize1 = pizzaInput1.value;
+  const pizzaSize2 = pizzaInput2.value;
 
   calculatePizzaGain(pizzaSize1, pizzaSize2);
 });
 
 pizzaInput2.addEventListener("input", () => {
   // write your code here
-  let pizzaSize1 = pizzaInput1.value;
-  let pizzaSize2 = pizzaInput2.value;
+  const pizzaSize1 = pizzaInput1.value;
+  const pizzaSize2 = pizzaInput2.value;
 
   calculatePizzaGain(pizzaSize1, pizzaSize2);
 });
