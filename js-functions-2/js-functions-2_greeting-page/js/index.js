@@ -24,26 +24,26 @@ const display = document.querySelector('[data-js="display"]');
 
 function getGreeting() {
   // Code here
-  if (new Date().getHours() >= 6 && new Date().getHours() <= 12)
-    return "Good Morning";
+  const hours = new Date().getHours();
 
-  if (new Date().getHours() >= 13 && new Date().getHours() <= 18)
-    return "Good Afternoon";
+  if (hours >= 6 && hours <= 12) return "Good Morning";
 
-  if (new Date().getHours() >= 19 && new Date().getHours() <= 22)
-    return "Good Evening";
+  if (hours >= 13 && hours <= 18) return "Good Afternoon";
 
-  if (new Date().getHours() >= 23 && new Date().getHours() <= 5)
-    return "Good Night";
+  if (hours >= 19 && hours <= 22) return "Good Evening";
+
+  if (hours >= 23 || hours <= 5) return "Good Night";
 }
 
 function getDayColor() {
   // Code here
-  if (new Date().getDay() >= 6 && new Date().getDay() <= 0) return "hotpink";
+  const days = new Date().getDay();
 
-  if (new Date().getDay() == 1) return "darkgray";
+  if (days == 1) return "darkgray";
 
-  if (new Date().getDay() >= 2 && new Date().getDay() <= 5) return "lightblue";
+  if (days >= 2 && days <= 5) return "lightblue";
+
+  return "hotpink";
 }
 
 display.textContent = getGreeting();
