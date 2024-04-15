@@ -36,12 +36,12 @@ logSeparator(2);
 
 // --v-- write your code here --v--
 
-function greet(message) {
-  console.log(message);
+function greet(name) {
+  console.log(`Welcome ${name}, good to see you again!`);
 }
-greet("Welcome Alice, good to see you again!");
-greet("Welcome Bob, good to see you again!");
-greet("Welcome Mary, good to see you again!");
+greet("Alice");
+greet("Bob");
+greet("Mary");
 
 // --^-- write your code here --^--
 
