@@ -20,7 +20,6 @@ uppercaseButton.addEventListener("click", () => {
   input.value = input.value.toUpperCase();
 });
 
-
 lowercaseButton.addEventListener("click", () => {
   input.value = input.value.toLowerCase();
 });
