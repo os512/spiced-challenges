@@ -7,7 +7,14 @@ const hoursInput = document.querySelector('[data-js="hours"]');
 const output = document.querySelector('[data-js="output"]');
 
 form.addEventListener("submit", (e) => {
-    e.preventDefault();
+	const story = `
+"DON'T TOUCH IT, ${nameInput.value.toUpperCase()}!",
+I yelled as ${nameInput.value} was about to touch
+the walls we had painted ${colorInput.value} not
+${hoursInput.value} hours ago.
+I would have expected their memory to
+last at least ${+hoursInput.value + 1} hours.`;
 
-    console.log("Hello, World!");
+	e.preventDefault();
+	output.innerHTML = story;
 });
