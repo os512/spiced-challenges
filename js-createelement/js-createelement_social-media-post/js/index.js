@@ -61,6 +61,8 @@ function createButton() {
   button.setAttribute("type", "button");
   button.setAttribute("data-js", "like-button");
 
+  button.addEventListener("click", handleLikeButtonClick);
+
   button.textContent = "♥ Like";
 
   return button;
