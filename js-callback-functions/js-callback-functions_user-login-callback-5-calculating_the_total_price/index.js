@@ -25,4 +25,4 @@ function extraPrice(product) {
 	return product.price;
 }
 
-calculateTotalPrice(products, extraPrice);
+const totalPrice = calculateTotalPrice(products, extraPrice);
