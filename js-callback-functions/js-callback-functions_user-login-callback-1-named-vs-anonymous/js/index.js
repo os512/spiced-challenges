@@ -11,6 +11,4 @@ function showWelcomeMessage() {
 
 // Call handleUserLogin below!
 handleUserLogin(showWelcomeMessage);
-handleUserLogin(() => {
-  console.log("Welcome! You are logged in now.");
-});
+handleUserLogin(() => console.log("Welcome! You are logged in now."));
