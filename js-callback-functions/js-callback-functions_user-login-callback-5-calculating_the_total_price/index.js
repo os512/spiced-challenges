@@ -12,4 +12,5 @@ const products = [
   // console.log(products[0].price);
 
 function calculateTotalPrice(products, extraPrice) {
+	let totalPrice = 0;
 }
