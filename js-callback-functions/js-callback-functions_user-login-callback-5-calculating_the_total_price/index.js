@@ -9,15 +9,20 @@ const products = [
 	{ name: "Coriander", price: 6 },
 ];
 
-// console.log(products[0].price);
-
 function calculateTotalPrice(products, extraPrice) {
 	let totalPrice = 0;
-	
+
 	for (const product of products) {
-		console.log(product.price);
-		
+		extraPrice(product);
+
+		totalPrice += extraPrice(product);
 	}
+
+	return totalPrice;
 }
 
-calculateTotalPrice(products);
+function extraPrice(product) {
+	return product.price;
+}
+
+calculateTotalPrice(products, extraPrice);
