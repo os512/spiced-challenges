@@ -7,10 +7,17 @@ const products = [
 	{ name: "Garam Masala", price: 10 },
 	{ name: "Vanilla Bean", price: 15 },
 	{ name: "Coriander", price: 6 },
-  ];
+];
 
-  // console.log(products[0].price);
+// console.log(products[0].price);
 
 function calculateTotalPrice(products, extraPrice) {
 	let totalPrice = 0;
+	
+	for (const product of products) {
+		console.log(product.price);
+		
+	}
 }
+
+calculateTotalPrice(products);
