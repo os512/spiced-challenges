@@ -9,4 +9,7 @@ const products = [
 	{ name: "Coriander", price: 6 },
   ];
 
-  
+  // console.log(products[0].price);
+
+function calculateTotalPrice(products, extraPrice) {
+}
