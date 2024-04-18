@@ -14,4 +14,4 @@ function double(number) {
 	return number * 2;
 }
 
-myMap(numbers, double);
+const doubledNumbers = myMap(numbers, double);
