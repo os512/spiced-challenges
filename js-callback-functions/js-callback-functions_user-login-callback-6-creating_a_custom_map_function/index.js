@@ -9,3 +9,9 @@ function myMap(numbers = [], double = callback) {
 
 	return results;
 }
+
+function double(number) {
+	return number * 2;
+}
+
+myMap(numbers, double);
