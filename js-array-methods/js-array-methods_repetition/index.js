@@ -70,9 +70,12 @@ const allTitlesInOneString = recipes.map((recipe) => recipe.title).join(", ");
 const recipesThatOnlyTake60minutesOrLess = recipes.filter(
   (recipe) => recipe.duration <= 60
 );
-console.log(recipesThatOnlyTake60minutesOrLess);
+// console.log(recipesThatOnlyTake60minutesOrLess);
 
-const allRecipesWithMoreThan2Servings = null;
+const allRecipesWithMoreThan2Servings = recipes.filter(
+  (recipe) => recipe.servings > 2
+);
+// console.log(allRecipesWithMoreThan2Servings);
 
 const allRecipesWithTitlesLongerThan12Characters = null;
 
