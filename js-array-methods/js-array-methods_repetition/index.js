@@ -58,7 +58,7 @@ const timePerServing = recipes.map((recipe) => {
 
 // 'Crepes, Scrambled Eggs, ...'
 const allTitlesInOneString = recipes.map((recipe) => recipe.title).join(", ");
-console.log(allTitlesInOneString);
+// console.log(allTitlesInOneString);
 
 // For more information how to join an array,
 // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join#joining_an_array_four_different_ways
@@ -67,7 +67,10 @@ console.log(allTitlesInOneString);
  2: `filter` exercises
 */
 
-const recipesThatOnlyTake60minutesOrLess = null;
+const recipesThatOnlyTake60minutesOrLess = recipes.filter(
+  (recipe) => recipe.duration <= 60
+);
+console.log(recipesThatOnlyTake60minutesOrLess);
 
 const allRecipesWithMoreThan2Servings = null;
 
