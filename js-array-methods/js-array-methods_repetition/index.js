@@ -37,9 +37,13 @@ const recipes = [
 
 // ['Crepes', ...]
 const onlyTitles = recipes.map((recipe) => recipe.title);
-console.log(onlyTitles);
+// console.log(onlyTitles);
 
-const titlesWithDuration = null; // ['Crepes (60min)', ...]
+// ['Crepes (60min)', ...]
+const titlesWithDuration = recipes.map(
+  (recipe) => `${recipe.title} (${recipe.duration})`
+);
+// console.log(titlesWithDuration);
 
 const timePerServing = null; // [20, 10, 432, 12]
 
