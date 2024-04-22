@@ -24,12 +24,14 @@ const cards = [
   },
 ];
 
-const lowerCaseAnswers = cards.map((card) => {
-  return card.answer.toLowerCase();
-});
+const lowerCaseAnswers = cards.map((card) => card.answer.toLowerCase());
 console.log(lowerCaseAnswers);
 
-const questionsAndAnswersTogether = null; // ["How often can I use <header>? - As often as you like.", ...]
+const questionsAndAnswersTogether = cards.map(
+  (card) => `QUESTION: ${card.question} & ANSWER: ${card.answer}`
+);
+console.log(questionsAndAnswersTogether);
+
 
 const questionAndAnswer = null; // [{ question: 'How often can I use <header>?', answer: 'As often as you like.'}, {...}]
 
