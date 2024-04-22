@@ -45,7 +45,11 @@ const titlesWithDuration = recipes.map(
 );
 // console.log(titlesWithDuration);
 
-const timePerServing = null; // [20, 10, 432, 12]
+// [20, 10, 432, 12]
+const timePerServing = recipes.map((recipe) => {
+  return recipe.duration;
+})
+// console.log(timePerServing);
 
 // EXTRA:
 
