@@ -1,14 +1,16 @@
 import { getRandomColor } from "./utils/randomColor.js";
+import Circle  from "./components/Circle/Circle.js";
 
 console.clear();
 
 const root = document.getElementById("root");
 
-const circle = document.createElement("div");
-circle.classList.add("circle");
-circle.addEventListener("click", () => {
-  circle.style.backgroundColor = "#ccc";
-});
+// const circle = document.createElement("div");
+// circle.classList.add("circle");
+// circle.addEventListener("click", () => {
+//   circle.style.backgroundColor = "#ccc";
+// });
+const circle = Circle();
 
 const square = document.createElement("div");
 square.classList.add("square");
