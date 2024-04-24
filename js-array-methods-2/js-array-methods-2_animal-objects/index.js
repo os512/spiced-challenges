@@ -95,33 +95,40 @@ const indexOfAnimalWithNameLongerFive = animals.findIndex(
 // Hint: sort() mutates the original array, which is bad.
 // -> Use animals.slice().sort(...) to make a copy (and the tests work).
 
-const animalsSortedAlphabetically = animals.sort((a, b) => {
+const animalsSortedAlphabetically = animals.slice().sort((a, b) => {
   if (a.name < b.name) {
     return -1;
-  }
-  if (a.name > b.name) {
+  } else if (a.name > b.name) {
     return 1;
   }
   return 0;
 });
 
 // or simply:
-const animalsSortedAlphabetically2 = animals.sort((a, b) =>
-  a.name.localeCompare(b.name)
+// const animalsSortedAlphabetically = animals.toSorted((a, b) =>
+//   a.name.localeCompare(b.name)
+// );
+
+const animalsSortedByWeightStartingWithLowest = animals
+  .slice()
+  .sort((a, b) => a.weight - b.weight);
+
+const animalsSortedByWeightReversed = animals
+  .slice()
+  .sort((b, a) => a.weight - b.weight);
+
+const animalWithWeightMoreThanFivehundredExists = animals.some(
+  (animal) => animal.weight > 500
 );
-
-const animalsSortedByWeightStartingWithLowest = animals.sort(
-  (a, b) => a.weight - b.weight
-);
-
-const animalsSortedByWeightReversed = animals.sort(
-  (a, b) => b.weight - a.weight
-);
-
-const animalWithWeightMoreThanFivehundredExists = animals.find((animal) => animal.weight > 500);
-
 // Hint: Filter for Europe first, then check every animal for its weight.
-const allAnimalsInEuropeWeighLessThanOnehundred = null;
+// 
+// OS: Shouldn't be the naming like `areAllAnimalsInEuropeWeighingLessThanOnehundred`???
+// This var name suggests objects to be returned!
+const allAnimalsInEuropeWeighLessThanOnehundred = animals
+  .filter((animal) => {
+    return animal.continents.find((continent) => continent == "Europe");
+  })
+  .every((europeanAnimal) => europeanAnimal.weight < 100);
 
 // Hint: filter + map + reduce
 const weightOfAllAnimalsInAfrica = null;
