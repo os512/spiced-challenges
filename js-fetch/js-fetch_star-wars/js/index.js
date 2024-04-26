@@ -43,7 +43,7 @@ fetchDataAndRender();
 
 async function fetchDataAndRender() {
   try {
-    const response = await fetch("https://swapi.py4e.com/api/people/1/");
+    const response = await fetch("https://swapi.py4e.com/api/people/");
 
     if (response.ok) {
       const data = await response.json();
