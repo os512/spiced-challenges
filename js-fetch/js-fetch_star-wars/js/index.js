@@ -48,6 +48,12 @@ async function fetchDataAndRender() {
     if (response.ok) {
       const data = await response.json();
       console.log(data);
+
+      data.results.forEach((result) => {
+        const card = Card(result);
+        renderElement(card);
+      });
+
       return data;
     }
   } catch (error) {
