@@ -50,6 +50,9 @@ const person = {
   firstName: "Alex",
 };
 
+export const {lastName: personLastName, ...moreInformation} = person;
+// console.log(moreInformation);
+
 // EXERCISE 5
 // Rewrite the following function (logInfo) to use destructuring assignment for the three variables it creates:
 
