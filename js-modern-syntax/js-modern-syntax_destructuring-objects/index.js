@@ -10,7 +10,7 @@ const company = {
   location: "Berlin",
 };
 export const {course} = company;
-console.log(course);
+// console.log(course);
 
 // example: export const {value1} = myObject;
 
@@ -22,6 +22,9 @@ console.log(course);
 //  2.3: 'isAdmin' property into the variable 'isAdmin' (false, if no such property exists)
 
 const user = { name: "John", years: 30 };
+
+export const {name, years: age, isAdmin = false} = user;
+console.log(isAdmin);
 
 // EXERCISE 3
 // Extract the variables from the dog object and
