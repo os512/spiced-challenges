@@ -137,7 +137,9 @@ const weightOfAllAnimalsInAfrica = animals
   .reduce((total, single) => total + single);
 
 // Hint: As above, but divided by the number of animals in Africa.
-const averageWeightOfAllAnimalsInAfrica = null;
+const averageWeightOfAllAnimalsInAfrica =
+  weightOfAllAnimalsInAfrica /
+  animals.filter((animal) => animal.continents.includes("Africa")).length;
 
 export {
   firstAnimalStartingWithLetterG,
