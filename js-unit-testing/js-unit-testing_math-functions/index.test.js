@@ -1,4 +1,4 @@
-import { add, subtract, multiply } from "./index.js";
+import { add, subtract, multiply, divide } from "./index.js";
 
 // Test add() function
 //
@@ -64,4 +64,20 @@ describe("Add function tests for multiply()", () => {
 
     expect(result).toBeGreaterThan(0);
   });
+});
+
+// Add test divide() function
+//
+describe("Add function tests for divide()", () => {
+  test("returns 3 if called with divide(9, 3)", () => {
+    const result = divide(9, 3);
+
+    expect(result).toBe(3);
+  });
+
+  test('returns "You should not do this!" if called with 0 as second argument', () => {
+	const result = divide(3, 0);
+
+	expect(result).toBe('You should not do this!');
+  })
 });
