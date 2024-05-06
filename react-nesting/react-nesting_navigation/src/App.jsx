@@ -3,6 +3,7 @@ import Header from "../src/components/Header.jsx";
 import Navigation from "../src/components/Navigation.jsx";
 import Link from "../src/components/Link.jsx";
 import Image from "../src/components/Image.jsx";
+import Logo from "../src/components/Logo.jsx";
 
 import avatar from "./assets/avatar.jpg";
 import logo from "./assets/logo.jpg";
@@ -12,7 +13,9 @@ export default function App() {
 		<>
 			<Header>
 				<Link href="#">
-					<Image src={logo} alt="logo"></Image>
+					<Logo src={logo} alt="logo">
+						{" "}
+					</Logo>
 				</Link>
 				<Navigation>
 					<Link href="#home">Home</Link>
