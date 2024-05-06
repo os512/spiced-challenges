@@ -17,13 +17,7 @@ export default function App() {
 					<Link href="#about">About</Link>
 					<Link href="#impressum">Impressum</Link>
 				</Navigation>
-				<button
-					type="button"
-					onClick={() => console.log("I could toggle a profile!")}
-					aria-label="toggle profile"
-				>
-					<Avatar />
-				</button>
+				<Avatar />
 			</Header>
 			<main>content goes here…</main>
 		</>
