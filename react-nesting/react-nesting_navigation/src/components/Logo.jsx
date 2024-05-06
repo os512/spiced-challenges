@@ -1,5 +1,6 @@
 import Image from "./Image.jsx";
+import logo from "../assets/logo.jpg";
 
-export default function Logo({ src, alt }) {
-	return <Image src={src} alt={alt}></Image>;
+export default function Logo() {
+	return <Image src={logo} alt="logo"></Image>;
 }
