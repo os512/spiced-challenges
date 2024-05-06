@@ -1,3 +1,3 @@
-export default function Headers({ children }) {
+export default function Header({ children }) {
 	return <header className="header">{children}</header>;
 }
