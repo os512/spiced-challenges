@@ -2,8 +2,8 @@ import "./App.css";
 import Header from "../src/components/Header.jsx";
 import Navigation from "../src/components/Navigation.jsx";
 import Link from "../src/components/Link.jsx";
-import Image from "../src/components/Image.jsx";
 import Logo from "../src/components/Logo.jsx";
+import Avatar from "../src/components/Avatar.jsx";
 
 import avatar from "./assets/avatar.jpg";
 import logo from "./assets/logo.jpg";
@@ -27,7 +27,7 @@ export default function App() {
 					onClick={() => console.log("I could toggle a profile!")}
 					aria-label="toggle profile"
 				>
-					<Image src={avatar} alt="avatar"></Image>
+					<Avatar src={avatar} alt="avatar"></Avatar>
 				</button>
 			</Header>
 			<main>content goes here…</main>
