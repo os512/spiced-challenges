@@ -41,13 +41,22 @@ const initialEntries = [
 function App() {
 	const [entries, setEntries] = useState(initialEntries);
 
+	function handleToggleFavorite(id) {
+		setEntries(
+			entries.map((entry) => {
+				if (entry.id === id) {
+					return { ...entry, isFavorite: !entry.isFavorite };
+				}
+				return entry;
+			})
+		);
+	}
+
 	function handleAddEntry(newEntry) {
 		const date = new Date().toLocaleDateString("en-us", {
 			dateStyle: "medium",
 		});
 		setEntries([{ id: uid(), date, ...newEntry, isFavorite: false }, ...entries]);
-
-		console.log(entries);
 	}
 
 	return (
@@ -55,7 +64,7 @@ function App() {
 			<Header />
 			<main className="app__main">
 				<EntryForm onAddEntry={handleAddEntry} />
-				<EntriesSection entries={entries} />
+				<EntriesSection entries={entries} onToggleFavorite={handleToggleFavorite} />
 			</main>
 			<Footer />
 		</div>
