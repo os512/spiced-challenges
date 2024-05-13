@@ -14,9 +14,7 @@ export default function App() {
   return (
     <div className="container">
       <h1>Personal Details Form</h1>
-
       <Form onCreateUser={handleCreateUser} />
-
       <h2>Your submitted details:</h2>
       <p>
         Name: <span className="output">{name}</span>
