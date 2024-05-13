@@ -3,18 +3,18 @@ import { useState } from "react";
 import "./Counter.css";
 
 export default function Counter() {
-  let [counter, SetCounter] = useState(0);
+  let [counter, setCounter] = useState(0);
 
   return (
     <div className="counter">
       <h1>Colored Number</h1>
-      <ColoredNumber value={0} />
-      {/* <ColoredNumber value={SetCounter(counter++)} /> */}
+      <ColoredNumber value={counter} />
       <div className="counter__buttons-container">
         <button
           type="button"
           className="counter__button"
           aria-label="increment count"
+          onClick={() => setCounter(++counter)}
         >
           +
         </button>
@@ -22,6 +22,7 @@ export default function Counter() {
           type="button"
           className="counter__button"
           aria-label="decrement count"
+          onClick={() => setCounter(--counter)}
         >
           -
         </button>
