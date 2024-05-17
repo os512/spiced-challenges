@@ -24,12 +24,7 @@ export default function TheFellowshipOfTheRing() {
           );
         })}
       </ul>
-      <Image
-        src={volume.cover}
-        alt={volume.title}
-        width="140"
-        height="230"
-      ></Image>
+      <Image src={volume.cover} alt={volume.title} width="140" height="230" />
     </>
   );
 }
