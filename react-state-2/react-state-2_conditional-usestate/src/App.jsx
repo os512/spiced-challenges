@@ -2,6 +2,7 @@ import "./App.css";
 import { useState } from "react";
 
 export default function App() {
+  const [message, setMessage] = useState("Secret message incoming...");
   const [showMessage, setShowMessage] = useState(false);
   if (!showMessage) {
     return (
@@ -22,8 +23,6 @@ export default function App() {
       </div>
     );
   }
-
-  const [message, setMessage] = useState("Secret message incoming...");
 
   return (
     <div className="container">
