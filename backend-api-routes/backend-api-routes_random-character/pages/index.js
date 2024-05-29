@@ -4,16 +4,16 @@ export default function HomePage() {
   const URL = "/api/random-character";
 
   const fetcher = async (url) => {
-    const data = await fetch(url);
+    const response = await fetch(url);
 
-    if (!data.ok) {
-      const error = new Error("An error occurred while fetching the data.");
-      error.info = await data.json();
-      error.status = data.status;
+    if (!response.ok) {
+      const error = new Error("An error occurred while fetching the response.");
+      error.info = await response.json();
+      error.status = response.status;
       throw error;
     }
 
-    return data.json();
+    return response.json();
   };
 
   const { data, error, isLoading } = useSWR(URL, fetcher);
