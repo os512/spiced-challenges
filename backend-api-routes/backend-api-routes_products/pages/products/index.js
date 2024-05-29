@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import useSWR from "swr";
 
 export default function Products() {
