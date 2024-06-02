@@ -2,6 +2,7 @@ import useSWR from "swr";
 import { useRouter } from "next/router";
 import { ProductCard } from "./Product.styled";
 import { StyledLink } from "../Link/Link.styled";
+import { Fragment } from "react";
 
 export default function Product() {
   const router = useRouter();
@@ -24,6 +25,13 @@ export default function Product() {
       <p>
         Price: {data.price} {data.currency}
       </p>
+      {data.reviews.map((review) => (
+        <Fragment key={review._id}>
+          <h4>{review.title}</h4>
+          <p>{[...Array(review.rating)].map(() => "★")}</p>
+          <p>{review.text}</p>
+        </Fragment>
+      ))}
       <StyledLink href="/">Back to all</StyledLink>
     </ProductCard>
   );
